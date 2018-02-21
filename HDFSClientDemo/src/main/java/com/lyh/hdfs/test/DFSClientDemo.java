@@ -152,7 +152,7 @@ public class DFSClientDemo {
 	// 定位文件读取
 	@Test
 	public void test7() throws IllegalArgumentException, IOException {
-		// 定位下载第一块
+		//定位下载第一块
 		// 创建输入流
 		FSDataInputStream fis = null;
 		// 获取输出流
