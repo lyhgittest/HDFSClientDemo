@@ -38,7 +38,7 @@ public class DFSClientDemo {
 	// 创建文件夹
 	@Test
 	public void test1() throws IllegalArgumentException, IOException {
-		fs.mkdirs(new Path("/user/zhangsan/lisi"));
+		fs.mkdirs(new Path("/user/zhangsan/lisi"));//此处的路径是hdfs系统上面的路径，不是本地文件系统的路径
 		/*
 		 * System.setProperty("HADOOP_USER_NAME", "lyh"); Map<String, String>
 		 * map = System.getenv(); Set<Entry<String, String>> entrySet =

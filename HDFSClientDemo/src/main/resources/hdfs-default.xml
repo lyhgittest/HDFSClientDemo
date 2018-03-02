@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+	<property>
+		<name>dfs.replication</name>
+		<value>1</value>
+	</property>
+	<!-- SecondaryNameNode每隔一小时执行一次 -->
+	<!-- <property>
+		<name>dfs.namenode.checkpoint.period</name>
+		<value>3600</value>
+	</property> -->
+	<!--一分钟检查一次操作次数，当操作次数达到1百万时，SecondaryNameNode执行一次  -->
+	<property>
+		<name>dfs.namenode.checkpoint.txns</name>
+		<value>1000000</value>
+		<description>操作动作次数</description>
+	</property>
+
+	<property>
+		<name>dfs.namenode.checkpoint.check.period</name>
+		<value>60</value>
+		<description> 1分钟检查一次操作次数</description>
+	</property>
+
+</configuration>
